@@ -1,9 +1,10 @@
+from django import forms
 from django.db import models
 
 from modelcluster.fields import ParentalKey, ParentalManyToManyField
 
 from wagtail import blocks
-from wagtail.admin.panels import MultiFieldPanel
+from wagtail.admin.panels import FieldPanel, MultiFieldPanel
 from wagtail.contrib.table_block.blocks import TableBlock
 from wagtail.embeds import blocks as embed_blocks
 from wagtail.fields import RichTextField, StreamField
@@ -59,7 +60,10 @@ class BlogPage(Page):
     ]
 
     content_panels = Page.content_panels + [
-        MultiFieldPanel(["date", "authors"], heading="Blog information"),
+        MultiFieldPanel([
+            "date",
+            FieldPanel("authors", widget=forms.CheckboxSelectMultiple),
+        ], heading="Blog information"),
         "intro", "body", "gallery_images"
     ]
 
