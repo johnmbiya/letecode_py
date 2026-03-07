@@ -186,7 +186,7 @@ WAGTAILADMIN_BASE_URL = "http://example.com"
 WAGTAILDOCS_EXTENSIONS = ['csv', 'docx', 'key', 'odt', 'pdf', 'pptx', 'rtf', 'txt', 'xlsx', 'zip']
 
 # code highlighting settings
-WAGTAIL_CODE_BLOCK_LINE_NUMBERS = False
+WAGTAIL_CODE_BLOCK_LINE_NUMBERS = True
 WAGTAIL_CODE_BLOCK_COPY_TO_CLIPBOARD = True
 
 WAGTAIL_CODE_BLOCK_LANGUAGES = (
