@@ -51,8 +51,6 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-
-
 ]
 
 MIDDLEWARE = [
@@ -194,11 +192,19 @@ WAGTAIL_CODE_BLOCK_COPY_TO_CLIPBOARD = True
 WAGTAIL_CODE_BLOCK_LANGUAGES = (
     ('bash', 'Bash/Shell'),
     ('css', 'CSS'),
+    ('dart', 'Dart'),
     ('diff', 'diff'),
     ('html', 'HTML'),
+    ('java', 'Java'),
+    ('kotlin', 'Kotlin'),
     ('javascript', 'Javascript'),
     ('json', 'JSON'),
     ('python', 'Python'),
+    ('php', 'PHP'),
     ('scss', 'SCSS'),
+    ('sql', 'SQL'),
+    ('swift', 'Swift'),
+    ('typescript', 'TypeScript'),
+    ('xml', 'XML'),
     ('yaml', 'YAML'),
 )
