@@ -10,8 +10,6 @@
 
     <div class="intro">{{ page.intro }}</div>
 
-    {% comment %} {{ page.body|richtext }} {% endcomment %}
-
     {% for block in page.body %}
         <section>{% include_block block %}</section>
     {% endfor %}
