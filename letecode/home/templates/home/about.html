@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% load wagtailcore_tags %}
+
+{% block body_class %}template-about{% endblock %}
+
+{% block content %}
+  <div>
+      <h1>{{ page.hero_title }}</h1>
+      <p>{{ page.hero_description }}</p>
+      
+  </div>
+{% endblock content %}
