@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     "home",
     "search",
     "base",
+    "portfolio",
 
     "wagtailcodeblock",
     "wagtail.contrib.table_block",
